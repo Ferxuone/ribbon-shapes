@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}	
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+  gap: 100px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card .ribbon-1 {
+  position: absolute;
+  top: -.8rem;
+  left: -.8rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card .ribbon-1::before {
+  content: 'New';
+  position: absolute;
+  width: 145%;
+  height: 2rem;
+  background: #62baea;
+  color: #fff;
+  text-align: center;
+  line-height: 2rem;
+  transform: rotate(-45deg) translateY(-1rem);
+}
+
+.card .ribbon-1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: .8rem;
+  height: .8rem;
+  background: #4a98bf;
+  box-shadow: 7.2rem -7.2rem #4a98bf;
+  z-index: -10;
+}
+
+.card .ribbon-2 {
+  position: absolute;
+  top: 1.6rem;
+  left: -1.1rem;
+  width: 90%;
+  height: 3rem;
+  background: #62baea;
+  color: #fff;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 2rem;
+  border-bottom-left-radius: 0;
+}
+
+.card .ribbon-2::before,
+.card .ribbon-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  width: 1.1rem;
+  height: 2rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.card .ribbon-2::before {
+  background: #62baea;
+}
+
+.card .ribbon-2::after {
+  background: #4a98bf;
+  border-top-left-radius: 1rem;
+}
+
+.card .ribbon-3 {
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  width: 3rem;
+  height: 5rem;
+  background: #62baea;
+  color: #fff;
+  text-align: center;
+  line-height: 3.5rem;
+}
+
+.card .ribbon-3::before {
+  position: absolute;
+  content: '';
+  right: -1rem;
+  border: .5rem solid #4a98bf;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.card .ribbon-3::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  border: 1.5rem solid transparent;
+  border-bottom-color: white;
+}
